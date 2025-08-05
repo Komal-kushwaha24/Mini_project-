@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{  padding: 0;
+            margin :0px;
+            /* background-color: rgb(145, 226, 242); */
+          
+        } 
+      
+        fieldset{
+            width: 30%;
+          border: 5px solid black;
+          display: flex;
+          
+
+
+            
+        }
+        .form{
+            color: rgb(216, 3, 74);
+            /* background-color: aqua; */
+            padding: 100px;
+            
+            
+        }
+     .form #submit{
+            margin: 20px;
+            width: 100px;
+            height: 40px;
+            border-radius: 60%;
+            display: flex;
+            background-color: rgb(211, 113, 113);
+        }
+        h1{
+            padding-left: 40%;
+        }
+    </style>
+</head>
+<body>
+     <h1>Registration Form</h1>
+  <div class="form">
+   
+            <fieldset>
+                <legend>User Information</legend>
+            <form action="" method="get" target="_self">
+                <label for="first name">First Name :</label>
+            <input type="text" name="first name" id="Fname" style="color: white" required><br />
+              <label for="last name">Last Name :</label>
+            <input type="text" name="last name" id="Lname" required><br />
+              <label for="gender">Gender :</label>
+              <input type="radio" name="gender" id="gender" value="male">male
+            <input type="radio" name="gender" id="gender" value="female">female<br />
+            <label for="dob">DOB :</label>
+            <input type="date" name="dob" id="dob"><br />
+            <label for="hobby">Hobby :</label><br />
+          <input type="checkbox" name="cricket" id="cricket"value="cricket">cricket<br />
+          <input type="checkbox" name="hockey" id="hockey"value="hockey">hockey<br />    <input type="checkbox" name="basket ball" id="basket ball"value="basket ball">Basket Ball<br >
+          <input type="checkbox" name="volley ball" id=" volley ball"value=" vollley ball">Volley Ball<br />
+          <label for="education">Your Highest Qualification</label>
+          <select name="education" id="education">
+          <option value="matriculation">Matriculation</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="graduation">Graduation</option>
+          <option value="pg">Post Graduation</option><br></select><br />
+          <label for="Category">Category : </label>
+          <select name="category" id="category">
+          <option value="general">General</option>
+
+          <option value="EWS">EWS</option>         
+           <option value="OBC">OBC-NCL</option>
+          <option value="SC">SC</option>
+          <option value="ST">ST</option></select> <br />
+           <label for="email">Email :</label>
+            <input type="email" name="email" id="email" validation><br />
+            <label for="password">Password :</label>
+             <input type="password" name="password" id="Password"><br />
+               <label for="confirm password">Confirm Password :</label>
+             <input type="confirm password" name="confirm password" id="Password"><br >
+             <input type="submit" value="submit" id="submit">
+             <!-- <button type="button">submit1</button> -->
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
